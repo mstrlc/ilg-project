@@ -1,0 +1,55 @@
+\section{Příklad 1}
+\textbf{Zadání:} Je dána soustava rovnic s parametrem $c \in \mathbb{R}$:\\
+\begin{displaymath}
+\begin{matrix}
+&2cx&+&3y&&&=&0\\
+&cx&+&cy&+&z&=&0&\\
+&2x&+&2y&+&cz&=&0&
+\end{matrix}
+\end{displaymath}
+Najděte všechny hodnoty parametru $c$, pro které soustava
+\begin{enumerate}[label=\alph*)]
+    \item má právě jedno řešení,
+    \item má nekonečně mnoho řešení,
+    \item nemá žádné řešení,
+    \item má právě dvě řešení,
+    \item má nanejvýš dvě řešení.
+\end{enumerate}
+Řešení vyjadřovat nemusíte, pouze rozhodněte o jeho existenci a počtu!
+\par\noindent\rule{\textwidth}{0.4pt}
+
+\textbf{Krok 1:} Určíme determinant matice soustavy. Homogenní lineární soustava rovnic může mít\\právě 1 nebo nekonečně mnoho řešení.
+\begin{displaymath}
+\begin{vmatrix}
+2c & 3 & 0 \\ 
+c & c & 1 \\ 
+2 & 2 & c
+\end{vmatrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
+det = 2c^3 + 0 + 6 - (4c+3c^2)=\\
+=2c^3-3c^2-4c+6=\\
+=c^2(2c-3)-2(2c-3)=\\
+=(c^2-2)(2c-3)
+\end{matrix}
+\end{displaymath}
+
+\textbf{Krok 2:} Když vyjde nulový determinant, rovnice má 0 nebo nekončně mnoho řešení.
+Žádné však mít nemůže, protože se jedná o homogenní soustavu rovnic.
+\begin{displaymath}
+\begin{matrix}
+(c^2-2)(2c-3)=0\\
+c^2-2=0\implies c^2=2 \implies c=\pm\sqrt{2}\\
+2c-3=0\implies c=\frac{3}{2}\\
+\end{matrix}
+\end{displaymath}
+\textbf{Řešení:} Rovnice
+\begin{enumerate}[label=\alph*)]
+    \item má právě jedno řešení pro $c\in\mathbb{R}\minus\{\frac{3}{2},\pm\sqrt{2}\}$,
+    \item má nekonečně mnoho řešení pro $c\in\{\frac{3}{2},\pm\sqrt{2}\}$,
+    \item nemá žádné řešení pro $c\in\emptyset$,
+    \item má právě dvě řešení pro $c\in\emptyset$,
+    \item má nanejvýš dvě řešení pro $c\in\mathbb{R}\minus\{\frac{3}{2},\pm\sqrt{2}\}$.
+\end{enumerate}

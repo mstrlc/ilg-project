@@ -1,0 +1,77 @@
+\section{Příklad 4}
+\textbf{Zadání:} Je dána soustava rovnic\\
+\begin{displaymath}
+\begin{matrix}
+4x&+500y&+3z& =& 248&\\
+\minus3x&+2y&+200z& =& \minus410&\\
+250x&\minus y&+5z& =& 546&\\
+\end{matrix}
+\end{displaymath}
+Řešení soutavy najděte s přesností $\varepsilon$ = 0,01 Jacobiho metodou, vyjděte z bodu [2,0; 0,5; $\minus$2,0]. Je-li to potřeba, soustavu nejprve upravte stak, aby byla zaručena konvergence. 
+\par\noindent\rule{\textwidth}{0.4pt}
+
+\textbf{Krok 1:} Změníme pořadí rovnic v soustavě tak, aby matice soustavy byla řádkově i sloupcově diagonálně dominatní, čímž zaručíme konvergenci.
+\begin{displaymath}
+\begin{matrix}
+250x&\minus y&+5z& =& 546&\\
+4x&+500y&+3z& =& 248&\\
+\minus3x&+2y&+200z& =& \minus410&\\
+\end{matrix}
+\end{displaymath}
+
+\textbf{Krok 2:} Z první rovnice si vyjádříme první neznámou, z druhé rovnice druhou neznámou a ze třetí rovnice třetí neznámou.
+\begin{displaymath}
+\begin{matrix}
+x& =& \frac{1}{250}& (546& +y& \minus5z)\\
+y& =& \frac{1}{500}& (248& \minus4x& \minus3z)\\
+z& =& \frac{1}{200}& (\minus410& +3x& \minus2y)\\
+\end{matrix}
+\end{displaymath}
+
+\textbf{Krok 3:} Do této soustavy dosadíme počáteční iteraci [2,0; 0,5; $\minus$2,0] a určíme první iteraci.
+\begin{displaymath}
+\begin{matrix}
+x^{(1)}& =& \frac{1}{250}& (546& +0,5& +(\minus5)\cdot(\minus2)) &= &2,226\\
+y^{(1)}& =& \frac{1}{500}& (248& +(\minus4)\cdot2& +(\minus3)\cdot(\minus2)) &= &0,492\\
+z^{(1)}& =& \frac{1}{200}& (\minus410& +3\cdot2& +(\minus2)\cdot0,5) &= &\minus2\\
+\end{matrix}
+\end{displaymath}
+
+\textbf{Krok 4:} Pomocí první iterace získáme stejným způsobem druhou iteraci.
+\begin{displaymath}
+\begin{matrix}
+x^{(2)}& =& \frac{1}{250}& (546& +0,492& +(\minus5)\cdot(\minus2)) &= &2,225968\\
+y^{(2)}& =& \frac{1}{500}& (248& +(\minus4)\cdot2,226& +(\minus3)\cdot(\minus2)) &= &0,490192\\
+z^{(2)}& =& \frac{1}{200}& (\minus410& +3\cdot2,226& +(\minus2)\cdot0,492) &= &\minus2,02153\\
+\end{matrix}
+\end{displaymath}
+
+\textbf{Krok 5:} Stejným způsobem třetí iteraci pomocí druhé.
+\begin{displaymath}
+\begin{matrix}
+x^{(3)}& =& \frac{1}{250}& (546& +0,490192& +(\minus5)\cdot(\minus2,02153)) &= &2,226391368\\
+y^{(3)}& =& \frac{1}{500}& (248& +(\minus4)\cdot2,225968& +(\minus3)\cdot(\minus2,02153)) &= &0,490321436\\
+z^{(3)}& =& \frac{1}{200}& (\minus410& +3\cdot2,225968& +(\minus2)\cdot0,490192) &= &\minus2,0215124\\
+\end{matrix}
+\end{displaymath}
+
+\textbf{Krok 6:} Pokud výsledné hodnoty zaznamenáme do tabulky, uvidíme, že rozdíly v abs. hodnotách mezi druhou a třetí iterací jsou u všech proměnných menší než požadovaná přesnost $\varepsilon$ = 0,01.
+\begin{displaymath}
+\begin{array}{r|l|l|l}
+k & x^{(0)} & y^{(0)} & z^{(0)}\\
+\hline
+0 & 2,0 & 0,5 & \minus2,0\\
+1 & 2,226 & 0,492 & \minus2,0\\
+2 & 2,225968 & 0,490192 & \minus2,02153\\
+3 & 2,226391368 & 0,490321436 & \minus2,0215124\\
+\end{array}
+\end{displaymath}
+
+ \textbf{Řešením soustavy je:}
+ \begin{displaymath}
+ \begin{array}{rcl}
+ x & = & 2,226391368 \\
+ y & = & 0,490321436 \\
+ z & = & \minus2,0215124 \\
+\end{array}
+\end{displaymath}

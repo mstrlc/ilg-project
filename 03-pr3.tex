@@ -1,0 +1,28 @@
+\section{Příklad 3}
+\textbf{Zadání:} Transformace $f: \mathbb{R}^3 \xrightarrow{} \mathbb{R}^3$ je dána následovně:
+\begin{displaymath}
+[x, y, z]^T \mapsto [x+y, x-z, z+x+y]^T.
+\end{displaymath}
+Zjistěte, jestli je $f$ lineární transformace. Svoje tvrzení zdůvodněte.
+\par\noindent\rule{\textwidth}{0.4pt}
+
+\textbf{Krok 1:} Ověříme, jestli se nulový vektor zobrazí na nulový.
+\begin{gather*}
+[0, 0, 0] \xrightarrow{} [0+0, 0-0, 0+0+0] \\
+[0, 0, 0] \xrightarrow{} [0, 0, 0]  \checkmark
+\end{gather*}
+
+\textbf{Krok 2:} TODO
+\begin{gather*}
+f(\overline{a}+\overline{b}) = f(\overline{a}) + f(\overline{b})\\
+f([x, y, z]^T+[i, j, k]^T) = f([x+i, y+j, z+k]^T) =\\= [x+i+y+j, x+i-z-k, z+k+x+i+y+j]\\
+f([x, y, z]^T+[i, j, k]^T)=[x+y, x-z, z+x+y]^T+[i+j,i-k,k+i+j]^T =\\=[x+y+i+j, x-z+i-k, z+x+y+k+i+j])\checkmark
+\end{gather*}
+
+\textbf{Krok 3:} TODO
+\begin{gather*}
+f(r\cdot\overline{a}) = f(r\cdot[x,y,z])=f([rx, ry, rz]) = [rx+ry, rx-rz, rz+rx+ry]\\
+r\cdot f(\overline{a})=r\cdot f([x,y,z])=r\cdot[x+y,x-z,z+x+y]=rx+ry,rx-rz,rz+rx+ry]\checkmark
+\end{gather*}
+
+\textbf{Všechny tři podmínky jsou splněny, $f$ je tedy lineární transformací.}
