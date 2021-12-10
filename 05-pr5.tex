@@ -3,37 +3,88 @@
 \textbf{Zadání:} Najděte ortogonální průmět vektoru $\bar{v}$ = [$\minus$2,$\minus$1,9] do prostoru $V$ generovaného vektory $\bar{a}$ = [3,$\minus$2,$\minus$1], $\bar{b}$ = [2,0,1].
 \par\noindent\rule{\textwidth}{0.4pt}
 
-\textbf{Krok 1:} 
+\textbf{Výpočet:}
 \begin{center}
 Vektor $\bar{w}$ je ortogonální průmět $\bar{v}$.\\
-Víme, že $\bar{w} \in W$, tedy $\bar{v} = r\cdot\bar{a}+s\cdot\bar{b}$.
+Víme, že $\bar{w} \in W$, tedy $\bar{w} = r\cdot\bar{a}+s\cdot\bar{b}$.
 \end{center}
 
-\begin{math}
-\\
-\bar{w} \textrm{ je ortogonální průmět vektoru } \bar{v}\\
-\\
+\begin{displaymath}
+\begin{matrix}
 \bar{v} = \bar{w} + \bar{u} \\
 \bar{u} \perp \bar{a} \implies \bar{u} \cdot \bar{a} = 0\\
 \bar{u} \perp \bar{b} \implies \bar{u} \cdot \bar{b} = 0\\
-\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
 \bar{v} = r\cdot\bar{a}+s\cdot\bar{b} + \bar{u} \; / \cdot \bar{a}\\
 \bar{v}\cdot\bar{a} = r\cdot\bar{a}\cdot\bar{a} + s\cdot\bar{b}\cdot\bar{a} + \bar{u}\cdot\bar{a}\\
-\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
 \bar{v}\cdot\bar{a} = [\minus2,\minus1,9]\cdot[3,\minus2,\minus1]=\minus6+2-9=\minus13\\
 \bar{a}\cdot\bar{a} = [3,\minus2,\minus1]\cdot[3,\minus2,\minus1]=9+4+1=14\\
 \bar{b}\cdot\bar{a} = [2,0,1]\cdot[3,\minus2,\minus1]=6\minus1=5\\
-\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
 -13=14\cdot r+5\cdot s\\
-\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
 \bar{v} = r\cdot\bar{a}+s\cdot\bar{b} + \bar{u} \; / \cdot \bar{b}\\
 \bar{v}\cdot\bar{b} = r\cdot\bar{a}\cdot\bar{b} + s\cdot\bar{b}\cdot\bar{b} + \bar{u}\cdot\bar{b}\\
-\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
 \bar{v}\cdot\bar{b} = [\minus2,\minus1,9]\cdot[2,0,1]=9\minus4=5\\
 \bar{b}\cdot\bar{b} = [2,0,1]\cdot[2,0,1]=4+1=5\\
-\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
 5=5\cdot r+5\cdot s\\
-\\
--13=14\cdot r+5\cdot s\\
-5=5\cdot r+5\cdot s
-\end{math}
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
+14\cdot r & + & 5\cdot s & = & -13\\
+5\cdot r & + & 5\cdot s & = & 5 \\
+\hline
+9\cdot r & & & = & -18\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
+r & = & -2\\
+s & = & 3\\
+\end{matrix}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{matrix}
+\bar{w} = r\cdot\bar{a}+s\cdot\bar{b} \\ 
+\bar{w} = -2\cdot\bar{a} +  3\cdot\bar{b} \\
+\bar{w} = -2\cdot[3,\minus2,\minus1] +  3\cdot[2,0,1] = [0,4,5]
+\end{matrix}
+\end{displaymath}
+
+\textbf{Řešení:} Ortogonálním průmětem vektoru $\bar{v}$ je vektor
+\begin{displaymath}
+\begin{matrix}
+\bar{w} = [0,4,5]
+\end{matrix}
+\end{displaymath}

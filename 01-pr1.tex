@@ -20,6 +20,7 @@ Najděte všechny hodnoty parametru $c$, pro které soustava
 
 \textbf{Krok 1:} Určíme determinant matice soustavy. Homogenní lineární soustava rovnic může mít\\právě 1 nebo nekonečně mnoho řešení.
 \begin{displaymath}
+|A|=
 \begin{vmatrix}
 2c & 3 & 0 \\ 
 c & c & 1 \\ 
@@ -29,7 +30,7 @@ c & c & 1 \\
 
 \begin{displaymath}
 \begin{matrix}
-det = 2c^3 + 0 + 6 - (4c+3c^2)=\\
+|A| = 2c^3 + 0 + 6 - (4c+3c^2)=\\
 =2c^3-3c^2-4c+6=\\
 =c^2(2c-3)-2(2c-3)=\\
 =(c^2-2)(2c-3)
@@ -41,10 +42,15 @@ det = 2c^3 + 0 + 6 - (4c+3c^2)=\\
 \begin{displaymath}
 \begin{matrix}
 (c^2-2)(2c-3)=0\\
-c^2-2=0\implies c^2=2 \implies c=\pm\sqrt{2}\\
-2c-3=0\implies c=\frac{3}{2}\\
 \end{matrix}
 \end{displaymath}
+\begin{displaymath}
+\begin{matrix}
+c^2-2=0 & \implies & c^2=2 & \implies & c=\pm\sqrt{2}\\
+2c-3=0 & \implies & 2c=3 & \implies & c=\frac{3}{2}\\
+\end{matrix}
+\end{displaymath}
+
 \textbf{Řešení:} Rovnice
 \begin{enumerate}[label=\alph*)]
     \item má právě jedno řešení pro $c\in\mathbb{R}\minus\{\frac{3}{2},\pm\sqrt{2}\}$,

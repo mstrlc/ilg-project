@@ -1,5 +1,54 @@
 \section{Příklad 2}
 
 
-Zadání:
+\textbf{Zadání:} Určete všechna $c \in \mathbb{R}$ tak, aby:
+\begin{displaymath}
+\begin{vmatrix}
+c+3 & -1 & -1\\
+5 & 3 & c+3\\
+-1 & c+3 & c+3\\
+\end{vmatrix}
+= 0.
+\end{displaymath}
 \par\noindent\rule{\textwidth}{0.4pt}
+
+\textbf{Krok 1:} Určíme determinant soustavy.
+\begin{displaymath}
+|A|=
+\begin{vmatrix}
+c+3 & -1 & -1\\
+5 & 3 & c+3\\
+-1 & c+3 & c+3\\
+\end{vmatrix}
+\end{displaymath}
+\begin{displaymath}
+\begin{matrix}
+|A| = 3(c+3)^2-5(c+3)+(c+3)-(3+(c+3)^3-5(c+3)) =\\
+= 3(c+3)^2-5(c+3)+(c+3)-3-(c+3)^3+5(c+3)) =\\
+= -(c+3)^3+3(c+3)^2+(c+3)-3=\\
+= -(c^3+9c^2+27c+27)+3(c^2+6c+9)+c=\\
+= -c^3-9c^2-27c-27)+3c^2+18c+27+c=\\
+= -c^3-6c^2-8c=\\
+=-c(c^2+6c+8)=\\
+=-c(c+4)(c+2)\\
+\end{matrix}
+\end{displaymath}
+
+\textbf{Krok 2:} Určíme, kdy je determinant roven 0.
+\begin{displaymath}
+\begin{matrix}
+-c(c+4)(c+2) = 0\\
+\end{matrix}
+\end{displaymath}
+\begin{displaymath}
+\begin{matrix}
+-c = 0 & \implies & c = 0 \\
+c+4=0 & \implies & c=-4\\
+c+2=0 & \implies & c=-2 
+\end{matrix}
+\end{displaymath}
+
+\textbf{Řešení:}
+\begin{displaymath}
+|A|=0 \Longleftrightarrow c \in \{0, -2, -4\}
+\end{displaymath}
