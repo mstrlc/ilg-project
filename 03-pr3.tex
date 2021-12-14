@@ -6,20 +6,20 @@
 Zjistěte, jestli je $f$ lineární transformace. Svoje tvrzení zdůvodněte.
 \par\noindent\rule{\textwidth}{0.4pt}
 
-\textbf{Krok 1:} Ověříme, jestli se nulový vektor zobrazí na nulový.
+\textbf{Krok 1:} Ověříme, jestli se nulový vektor zobrazí do nulového.
 \begin{gather*}
 [0, 0, 0] \xrightarrow{} [0+0, 0-0, 0+0+0] \\
 [0, 0, 0] \xrightarrow{} [0, 0, 0]  \checkmark
 \end{gather*}
 
-\textbf{Krok 2:} TODO
+\textbf{Krok 2:} Ověříme, jestli obraz součtu je součet obrazů.
 \begin{gather*}
 f(\overline{a}+\overline{b}) = f(\overline{a}) + f(\overline{b})\\
 f([x, y, z]^T+[i, j, k]^T) = f([x+i, y+j, z+k]^T) =\\= [x+i+y+j, x+i-z-k, z+k+x+i+y+j]\\
 f([x, y, z]^T+[i, j, k]^T)=[x+y, x-z, z+x+y]^T+[i+j,i-k,k+i+j]^T =\\=[x+y+i+j, x-z+i-k, z+x+y+k+i+j])\checkmark
 \end{gather*}
 
-\textbf{Krok 3:} TODO
+\textbf{Krok 3:} Ověříme, jestli obraz násobku skalárem je násobkem obrazu.
 \begin{gather*}
 f(r\cdot\overline{a}) = f(r\cdot[x,y,z])=f([rx, ry, rz]) = [rx+ry, rx-rz, rz+rx+ry]\\
 r\cdot f(\overline{a})=r\cdot f([x,y,z])=r\cdot[x+y,x-z,z+x+y]=rx+ry,rx-rz,rz+rx+ry]\checkmark

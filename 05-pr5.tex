@@ -3,12 +3,12 @@
 \textbf{Zadání:} Najděte ortogonální průmět vektoru $\bar{v}$ = [$\minus$2,$\minus$1,9] do prostoru $V$ generovaného vektory $\bar{a}$ = [3,$\minus$2,$\minus$1], $\bar{b}$ = [2,0,1].
 \par\noindent\rule{\textwidth}{0.4pt}
 
-\textbf{Výpočet:}
-\begin{center}
-Vektor $\bar{w}$ je ortogonální průmět $\bar{v}$.\\
-Víme, že $\bar{w} \in W$, tedy $\bar{w} = r\cdot\bar{a}+s\cdot\bar{b}$.
-\end{center}
-
+\textbf{Krok 1:} Ortogonální průmět $\bar{v}$ do $W$ je $\bar{w} \in W$. $\bar{u}$ je ortogolnální k prostoru $W$. 
+\begin{displaymath}
+\begin{matrix}
+\bar{w} \in W \implies \bar{w} = r\cdot\bar{a}+s\cdot\bar{b}
+\end{matrix}
+\end{displaymath}
 \begin{displaymath}
 \begin{matrix}
 \bar{v} = \bar{w} + \bar{u} \\
@@ -17,6 +17,7 @@ Víme, že $\bar{w} \in W$, tedy $\bar{w} = r\cdot\bar{a}+s\cdot\bar{b}$.
 \end{matrix}
 \end{displaymath}
 
+\textbf{Krok 2:} Postupně vynásobíme $\bar{v}$ vektory $\bar{a}$ a $\bar{b}$.
 \begin{displaymath}
 \begin{matrix}
 \bar{v} = r\cdot\bar{a}+s\cdot\bar{b} + \bar{u} \; / \cdot \bar{a}\\
@@ -58,6 +59,7 @@ Víme, že $\bar{w} \in W$, tedy $\bar{w} = r\cdot\bar{a}+s\cdot\bar{b}$.
 \end{matrix}
 \end{displaymath}
 
+\textbf{Krok 3:} Ze soustavy rovnic vypočítáme $r$ a $s$.
 \begin{displaymath}
 \begin{matrix}
 14\cdot r & + & 5\cdot s & = & -13\\
@@ -74,6 +76,7 @@ s & = & 3\\
 \end{matrix}
 \end{displaymath}
 
+\textbf{Krok 4:} Vypočítané $r$ a $s$ dosadíme do rovnice $\bar{w} = r\cdot\bar{a}+s\cdot\bar{b}$ a dostaneme vektor $\bar{w}$.
 \begin{displaymath}
 \begin{matrix}
 \bar{w} = r\cdot\bar{a}+s\cdot\bar{b} \\ 
